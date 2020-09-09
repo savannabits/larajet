@@ -17,9 +17,8 @@
             <textarea id="description" class="form-input w-full" wire:model="data.description" ></textarea>
             <x-jet-input-error for="data.description" class="mt-2" />
         </div>
-        {{collect($data)}}
         <div>
-            <x-form.select2 wire:model="state" id="state" class="form-select">
+            <x-form.select2 wire:model.lazy="state" id="state" class="form-select">
                 <option value="ALB">ALABAMA</option>
                 <option value="ALK">ALASKA</option>
                 <option value="MN">Minne</option>
